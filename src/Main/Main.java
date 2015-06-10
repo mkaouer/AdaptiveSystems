@@ -23,8 +23,8 @@ import bean.AnalyzedClass;
 public class Main {
 
 	
-	private static String experimentationPath = "C:/Users/User/Desktop/data/";
-	private static String outputFile = experimentationPath + "/Data"  + ".csv";
+	private static String experimentationPath = "InputFiles";
+	private static String outputFile = "OutputFiles/" + "/Data"  + ".csv";
 	
 	
 	@SuppressWarnings("unused")
@@ -36,7 +36,7 @@ public class Main {
 		PrintWriter pw = new PrintWriter(output);
 	pw.println("Nom_Interface; X;Y;Width;Height;WInterface;HInterface;Nb;Localisation; Density;  Unity;Homogeneity; Simplicity;Sequence;Symmetry; Grouping; Regularity");
 		
-		File errorLog = new File(experimentationPath + "/errorLog.txt");
+		File errorLog = new File("OutputFiles/" + "/errorLog.txt");
 		errorLog.createNewFile();
 		PrintWriter pwError = new PrintWriter(errorLog);
 		
