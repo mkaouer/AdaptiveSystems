@@ -85,12 +85,12 @@ public class InputReader
          //target_metamodel_path = new String("./configuration/target_input.xml");
         //ines (modifification du fichier source_input
         //ines (modifification du fichier target_input
-        source_metamodel_path = new String("C:/Users/User/Desktop/Parsing_Interface/Input Files/input for detection rule/Source2.xml");
-        source_metamodel_path1 = new String("C:/Users/User/Desktop/Parsing_Interface/Input Files/input for detection rule/Source3.xml");
-        target_metamodel_path = new String("C:/Users/User/Desktop/Parsing_Interface/Input Files/input for detection rule/target2.xml");
+        source_metamodel_path = new String("InputFiles/detectionInput/Source2.xml");
+        source_metamodel_path1 = new String("InputFiles/detectionInput/Source3.xml");
+        target_metamodel_path = new String("InputFiles/detectionInput/target2.xml");
         source_model_path = new String("./configuration/model_input.xml");
-        source_model_path = new String("C:/Users/User/Desktop/Parsing_Interface/Input Files/input for detection rule/model2.xml");
-        quality_metrics_path = new String("C:/Users/User/Desktop/Parsing_Interface/Input Files/input for detection rule/quality_metrics.xml");
+        source_model_path = new String("InputFiles/detectionInput/model2.xml");
+        quality_metrics_path = new String("InputFiles/detectionInput/quality_metrics.xml");
         
         source = new ArrayList<MetaModel>();
         source2 = new ArrayList<MetaModel>();
