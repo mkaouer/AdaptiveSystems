@@ -18,5 +18,11 @@
 	<classpathentry kind="lib" path="C:/Users/User/Desktop/AlgorithmGenetic/bin/algorithmgenetic/jdom-2.0.2-javadoc.jar"/>
 	<classpathentry kind="lib" path="C:/Users/User/Desktop/AlgorithmGenetic/bin/algorithmgenetic/jdom-2.0.2-junit.jar"/>
 	<classpathentry kind="lib" path="C:/Users/User/Desktop/AlgorithmGenetic/bin/algorithmgenetic/jdom-2.0.2-sources.jar"/>
+	<classpathentry kind="lib" path="lib/CKMetric.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-core-3.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.core.runtime_3.8.0.v20120521-2346.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.jdt.core_3.8.3.v20130121-145325.jar"/>
+	<classpathentry kind="lib" path="lib/RCaller-2.0.7.jar"/>
+	<classpathentry kind="lib" path="lib/weka-3.7.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
