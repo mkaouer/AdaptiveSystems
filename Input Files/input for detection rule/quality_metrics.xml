@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<QUALITY>
+<element>
+	<prefix>tables_lower_bound</prefix>
+	<suffix>5</suffix>
+</element>
+<element>
+	<prefix>columns_lower_bound</prefix>
+	<suffix>9</suffix>
+</element>
+<element>
+	<prefix>primary_keys_lower_bound</prefix>
+	<suffix>4</suffix>
+</element>
+<element>
+	<prefix>associations_lower_bound</prefix>
+	<suffix>4</suffix>
+</element>
+<element>
+	<prefix>generalization_lower_bound</prefix>
+	<suffix>4</suffix>
+</element>
+<element>
+	<prefix>average_attributes_per_class</prefix>
+	<suffix>3</suffix>
+</element>
+<element>
+	<prefix>average_associations_per_class</prefix>
+	<suffix>2</suffix>
+</element>
+<element>
+	<prefix>maximum_depth_per_generalization</prefix>
+	<suffix>2</suffix>
+</element>
+</QUALITY>

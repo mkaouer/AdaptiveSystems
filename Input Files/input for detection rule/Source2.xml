@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UP>
+- <element>
+  <prefix>Motivation</prefix> 
+  <suffix>H</suffix> 
+  </element>
+   <element>
+  <prefix>Motivation</prefix> 
+  <suffix>M</suffix> 
+  </element>
+   <element>
+  <prefix>Motivation</prefix> 
+  <suffix>L</suffix> 
+  </element>
+- <element>
+  <prefix>Age</prefix> 
+  <suffix>L</suffix>
+  </element>
+  <element>
+  <prefix>Age</prefix> 
+  <suffix>H</suffix>
+  </element>
+  <element>
+  <prefix>Age</prefix> 
+  <suffix>M</suffix>
+  </element>
+- <element>
+  <prefix>Education_level</prefix>
+  <suffix>L</suffix>
+  </element>
+  <element>
+  <prefix>Education_level</prefix>
+  <suffix>M</suffix>
+</element>
+<element>
+  <prefix>Education_level</prefix>
+  <suffix>H</suffix>
+ </element>
+<element>
+  <prefix>User experience</prefix> 
+  <suffix>M</suffix> 
+  </element>
+  <element>
+  <prefix>User experience</prefix> 
+  <suffix>L</suffix> 
+  </element>
+  <element>
+  <prefix>User experience</prefix> 
+  <suffix>H</suffix> 
+  </element>
+  <element>
+  <prefix>Intrest</prefix>
+  <suffix>M</suffix> 
+  </element>
+  <element>
+  <prefix>Intrest</prefix>
+  <suffix>L</suffix> 
+  </element>
+  <element>
+  <prefix>Intrest</prefix>
+  <suffix>H</suffix> 
+  </element>
+  <element>
+  <prefix>screen size</prefix> 
+  <suffix>H</suffix> 
+  </element>
+  <element>
+  <prefix>screen size</prefix> 
+  <suffix>M</suffix> 
+  </element>
+  <element>
+  <prefix>screen size</prefix> 
+  <suffix>L</suffix> 
+  </element>
+</UP>
+
+
+
