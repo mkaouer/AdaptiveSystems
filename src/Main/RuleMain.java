@@ -1,9 +1,11 @@
 
 package Main;
 import java.util.ArrayList;
+
 import java.util.Random;
 
-import Detection_rule.InputReader;
+import Detection_rule.Input;
+
 import Detection_rule.MetaModel;
 import Detection_rule.Rule;
 public class  RuleMain 
@@ -14,17 +16,20 @@ public class  RuleMain
 	      {  
 		 rules = new ArrayList<Rule>();
 		
-	        //perfect_rules = new ArrayList<Rule>();
-	        //correct_rules = new ArrayList<Integer>();
-	        ArrayList<MetaModel> output = new ArrayList<MetaModel>();
+	        new ArrayList<MetaModel>();
 	        
 	      }
+   
+ 
+   
 	
-   void create_rules(InputReader r, int min_rules_size,int max_rules_size)
+   void create_rules(Input r, int min_rules_size,int max_rules_size)
 { 
     int rules_size;
     int source_index;
+    int source_index0;
     int source_index1;
+ int   source_index2;
     int target_index;
     Random number_generator = new Random(); 
     rules_size = min_rules_size + (int)(Math.random() * ((max_rules_size - min_rules_size) + 1));
@@ -35,17 +40,20 @@ public class  RuleMain
     
     for (int i=0; i<rules_size;i++)
     {
-        source_index = number_generator.nextInt(r.source.size());
-        source_index1 = number_generator.nextInt(r.source2.size());
-        target_index = number_generator.nextInt(r.target.size());
-        
+        source_index = number_generator.nextInt(Input.Context().length);
+        source_index0= number_generator.nextInt(Input.ValuesOfContext().length);
+        source_index1 = number_generator.nextInt(Input.Metrics().length);
+        source_index2 = number_generator.nextInt(Input.Operator().length);
+        target_index = number_generator.nextInt(Input.Problem().length);
+        System.out.println(source_index1);
         Rule temp = new Rule();
-        temp.src = r.source.get(source_index);
-        temp.src2 = r.source2.get(source_index1);
-        temp.trg = r.target.get(target_index);
-        temp.src.print_metamodel();
-        temp.src2.print_metamodel();
-        temp.trg.print_metamodel();
+        temp.src =  Input.Context()[source_index];
+        temp.src0 = Input.ValuesOfContext()[source_index0];
+        temp.src2 = Input.Metrics()[source_index1];
+        temp.src3 = Input.Operator()[source_index2];
+        temp.trg =  Input.Problem()[target_index];
+    //    print_metamodel(temp.src,temp.src0,temp.src2,temp.trg);
+        
         temp.print_rule();
         rules.add(temp);
        System.out.println(temp.rule_text);}
@@ -66,7 +74,7 @@ public class  RuleMain
         int max_rules_size = 100
         		;
         RuleMain R = new RuleMain();
-        InputReader input = new InputReader();
-        input.read_input_files();
+        Input input = new Input();
+       
         R.create_rules(input, min_rules_size, max_rules_size);}
 }

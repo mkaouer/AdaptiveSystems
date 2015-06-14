@@ -32,10 +32,11 @@ import org.jdom2.output.XMLOutputter;
  */
 public class MetaModel 
 {
-    Element name ;
+    String[] Context ;
     
-    List<Element> prefixes ;
-    List<Element> suffixes ;
+    String[] Values ;
+    String[] Metrics;
+   String[] Problem;
     
     String metamodel_text ;
     String metamodel_text1 ;
@@ -43,9 +44,7 @@ public class MetaModel
     
     MetaModel ()
     {
-        Element name = new Element("null");
-        prefixes= new ArrayList<Element>() ;
-        suffixes= new ArrayList<Element>() ;
+       
         metamodel_text = new String("");
         metamodel_text1 = new String("");
         metamodel_text2 = new String("");
@@ -53,9 +52,10 @@ public class MetaModel
     
     MetaModel (MetaModel m)
     {
-        this.name = m.name;
-        this.prefixes = m.prefixes ;
-        this.suffixes = m.suffixes ;
+        this.Context = m.Context;
+        this.Values = m.Values ;
+        this.Metrics = m.Metrics ;
+        this.Problem = m.Problem ;
         this.metamodel_text = m.metamodel_text;
         this.metamodel_text1 = m.metamodel_text1;
         this.metamodel_text2 = m.metamodel_text2;
@@ -72,11 +72,11 @@ public class MetaModel
         //System.out.println("\n size of suffixes : "+suffixes.size());
         
         i=0;
-        while(i<prefixes.size())
+        while(i<Context.length)
         {
-            temp = temp.concat(prefixes.get(i).getText());
-            temp1 = temp1.concat(prefixes.get(i).getText());
-            temp2 = temp2.concat(prefixes.get(i).getText());
+            temp = temp.concat(Context[i]);
+            temp1 = temp1.concat(Context[i]);
+            temp2 = temp2.concat(Context[i]);
           
             //System.out.println("\n"+prefixes.get(i).getText());
             //System.out.println("\n"+temp);
@@ -86,11 +86,38 @@ public class MetaModel
         temp1 = temp1.concat("=>");
         temp2 = temp2.concat("");
         i=0;
-        while(i<suffixes.size())
+        while(i<Values.length)
         {
-            temp = temp.concat(suffixes.get(i).getText());
-            temp1 = temp1.concat(suffixes.get(i).getText());
-            temp2 = temp2.concat(suffixes.get(i).getText());
+            temp = temp.concat(Values[i]);
+            temp1 = temp1.concat(Values[i]);
+            temp2 = temp2.concat(Values[i]);
+            
+            i++;
+            //if (i == suffixes.size()) temp = temp.concat(")");
+            //else temp = temp.concat(",");
+            
+        }
+        i=0;
+        while(i<Metrics.length)
+        {
+            temp = temp.concat(Metrics[i]);
+            temp1 = temp1.concat(Metrics[i]);
+            temp2 = temp2.concat(Metrics[i]);
+            
+            i++;
+            //if (i == suffixes.size()) temp = temp.concat(")");
+            //else temp = temp.concat(",");
+            
+        }
+        temp = temp.concat("=");
+        temp1 = temp1.concat("=>");
+        temp2 = temp2.concat("");
+        i=0;
+        while(i<Problem.length)
+        {
+            temp = temp.concat(Problem[i]);
+            temp1 = temp1.concat(Problem[i]);
+            temp2 = temp2.concat(Problem[i]);
             
             i++;
             //if (i == suffixes.size()) temp = temp.concat(")");
