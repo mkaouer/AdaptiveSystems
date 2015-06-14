@@ -38,7 +38,7 @@ public class Input {
 
 	}
 	public static  String[] Operator() {
-		String [] Operator= { "<","<=",">",">="};
+		String [] Operator= { "<=",">="};
 	
 		
 		return Operator;
@@ -46,7 +46,7 @@ public class Input {
 	}
 
 	public static  String[] Problem() {
-		String [] Problem= { "Problem1","Problem2","Problem4","Problem5","Problem6"};
+		String [] Problem= { "Problem11","Problem12","Problem21","Problem22","Problem31","Problem32","Problem41","Problem42","Problem51","Problem52","Problem61","Problem62","Problem71","Problem72","Problem81","Problem82"};
 	
 		
 		return Problem;

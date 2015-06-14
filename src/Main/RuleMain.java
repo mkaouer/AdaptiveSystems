@@ -45,7 +45,7 @@ public class  RuleMain
         source_index1 = number_generator.nextInt(Input.Metrics().length);
         source_index2 = number_generator.nextInt(Input.Operator().length);
         target_index = number_generator.nextInt(Input.Problem().length);
-        System.out.println(source_index1);
+       // System.out.println(source_index1);
         Rule temp = new Rule();
         temp.src =  Input.Context()[source_index];
         temp.src0 = Input.ValuesOfContext()[source_index0];
