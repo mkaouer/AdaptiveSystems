@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="lib/lucene-core-3.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.core.runtime_3.8.0.v20120521-2346.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.jdt.core_3.8.3.v20130121-145325.jar"/>
+	<classpathentry kind="lib" path="lib/RCaller-2.0.7.jar"/>
+	<classpathentry kind="lib" path="lib/weka-3.7.3.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/ReportingTool_r1.1.2/ReportingTool.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/ReportingTool_r1.1.2/lib/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/ReportingTool_r1.1.2/lib/ini4j-0.5.2.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/ReportingTool_r1.1.2/lib/JSAP-2.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="C:/Users/MICRO-PC/Desktop/AlgorithmGenetic/build/classes/algorithmgenetic/jaxen-1.1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/MICRO-PC/Desktop/AlgorithmGenetic/build/classes/algorithmgenetic/jdom-2.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/MICRO-PC/Desktop/AlgorithmGenetic/build/classes/algorithmgenetic/jdom-2.0.2-contrib.jar"/>
+	<classpathentry kind="lib" path="C:/Users/MICRO-PC/Desktop/AlgorithmGenetic/build/classes/algorithmgenetic/jdom-2.0.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/MICRO-PC/Desktop/AlgorithmGenetic/build/classes/algorithmgenetic/jdom-2.0.2-junit.jar"/>
+	<classpathentry kind="lib" path="C:/Users/MICRO-PC/Desktop/AlgorithmGenetic/build/classes/algorithmgenetic/jdom-2.0.2-sources.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
