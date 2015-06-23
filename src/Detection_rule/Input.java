@@ -24,7 +24,7 @@ public class Input {
 
 	}
 	public static  String[] ValuesOfContext() {
-		String [] Values= { "L","M","H"};
+		String [] Values= { "Low","Meduim","High"};
 	
 	
 		return Values;
